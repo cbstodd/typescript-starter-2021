@@ -1,0 +1,9 @@
+# Project files that shouldn't be commited to git.
+node_modules
+.env
+.idea
+.vscode
+
+# Common build directories:
+build
+dist
