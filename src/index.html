@@ -1,22 +1,29 @@
-<!DOCTYPE html>
-<html lang="">
-
+<!doctype html>
+<html lang="en-US"  style="font-size:62.5%">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>
-    <%= htmlWebpackPlugin.options.title %>
-  </title>
-
-  <meta name="description" content="<%= htmlWebpackPlugin.options.title %>">
-
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="description" content="<%= htmlWebpackPlugin.options.title %>">
+    <link rel="stylesheet" href="index.css" async>
 </head>
 
 <body>
-  <div> You have successfully started your Typescript application using Webpack. Open your console to see your printed message from the index.ts file </div>
-  <p>By <a href="https://twitter.com/renaudin_yann">@renaudin_yann</a> </p>
-</body>
 
+<header><h1>Congratulations your App is up and running</h1></header>
+<section>
+    <div class="container">
+        <h3>Typescript Starter</h3>
+        <p>Please open your developer console <code>command</code> + <code>option</code> + <code>i</code> to see more
+            information</p>
+    </div>
+</section>
+
+<footer>
+    <p>Questions: <a href="https://colinstodd.com/#getInTouch" target="_blank" title="Colin Stodd's Website"
+                     rel="noopener nofollow">Contact Colin</a></p>
+</footer>
+</body>
 </html>

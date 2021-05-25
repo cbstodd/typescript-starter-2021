@@ -1,8 +1,20 @@
-import { MyLibrary } from './MyLibrary';
+import {Contact} from './contact/ContactModel';
+import {generateId, Greetings} from './contact/ContactService';
 
-console.log('See this in your browser console: Typescript Webpack Starter Launched');
+const newUID: string = generateId();
+const date: number = Date.now();
 
-const myLibrary = new MyLibrary();
-const result = myLibrary.executeDependency();
+const newContact1: Contact = new Greetings(
+    {'age': 37},
+    {'createdAt': date},
+    {'firstName': 'Colin'},
+    {'lastName': 'Stodd'},
+    {'uid': newUID.toString()}
+);
 
-console.log(`A random number ${result}`);
+console.table(newContact1);
+
+// newContact1.greetingMsg();
+// newContact1.getInfo();
+
+
